@@ -51,8 +51,9 @@ def get_description_rate_change(diff, rate):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description='Process tax conversions',
-        usage="prog [--sum] [--date] [--tc_date] [--currency]")
+        description="Process tax conversions\n"
+                    "Example:\n"
+                    " {0} --payment 1000 --date 21.05.2013".format(__file__))
 
     parser.add_argument("--payment", required=True,
                         type=int, dest="payment",
