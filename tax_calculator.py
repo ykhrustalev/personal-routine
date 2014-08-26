@@ -56,7 +56,7 @@ if __name__ == "__main__":
                     " {0} --payment 1000 --date 21.05.2013".format(__file__))
 
     parser.add_argument("--payment", required=True,
-                        type=int, dest="payment",
+                        type=float, dest="payment",
                         help="Transaction sum")
 
     parser.add_argument("--date", required=True,
